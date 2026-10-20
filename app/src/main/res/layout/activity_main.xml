@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blush_pink"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@color/soft_pink"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💗 Calorie Quest"
+            android:textColor="#AD4775"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Your daily nutrition adventure ✨"
+            android:textColor="#765466"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/calorieTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:text="🔥 Calories: 0 kcal"
+            android:textColor="#AD4775"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/proteinTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:text="💪 Protein: 0 g"
+            android:textColor="#AD4775"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/xpTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:text="⭐ XP: 0"
+            android:textColor="#AD4775"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/levelText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="🌱 Level 1 - Beginner"
+            android:textColor="#B74755"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/levelProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_marginTop="8dp"
+            android:max="100"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/streakText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="16dp"
+            android:text="🔥 Daily Streak: 0 days"
+            android:textColor="#AD4775"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="🍓 Add your food"
+            android:textColor="#AD4775"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/foodSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/mealName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/rose_pink"
+            android:hint= "Food name"
+            android:inputType="textCapSentences"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:textColor="#333333" />
+
+        <EditText
+            android:id="@+id/mealCalories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Calories (kcal)"
+            android:inputType="number"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/mealQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantity (grams)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/mealProtein"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Protein (grams)"
+            android:inputType="numberDecimal"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cute_card"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:text="🎯 Daily Goals"
+            android:textColor="#B54455"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/calorieGoalText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="Calories: 0 / 2000 kcal" />
+
+        <ProgressBar
+            android:id="@+id/calorieProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_marginBottom="12dp"
+            android:max="2000"
+            android:progress="0"
+            android:progressBackgroundTint="@color/blush_pink"
+            android:progressTint="@color/rose_pink" />
+
+        <TextView
+            android:id="@+id/proteinGoalText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="Protein: 0 / 60 g" />
+
+        <ProgressBar
+            android:id="@+id/proteinProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_marginBottom="16dp"
+            android:max="60"
+            android:progress="0"
+            android:progressBackgroundTint="@color/blush_pink"
+            android:progressTint="@color/rose_pink" />
+
+        <Button
+            android:id="@+id/addMealButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Add Food +10 XP"
+            android:backgroundTint="#E875A5"
+            android:textColor="#FFFFFF"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Today's food 🍽️"
+            android:textColor="#AD4775"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mealHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:text="No food added yet."
+            android:textColor="#493641"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/previousDaysTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="12dp"
+            android:background="@drawable/cute_card"
+            android:text="📅 Previous Days"
+            android:textColor="#AD4775"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/previousDaysContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/personalRecordsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="12dp"
+            android:background="@drawable/cute_card"
+            android:text="🏆 My Personal Records"
+            android:textColor="#AD4775"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+
+        <LinearLayout
+            android:id="@+id/personalRecordsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/cute_card"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/highestCaloriesText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔥 Highest Daily Calories: 0 kcal"
+                android:textColor="#AD4775"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+
+
+            <TextView
+                android:id="@+id/highestProteinText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💪 Highest Daily Protein: 0 g"
+                android:textColor="#AD4775"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
