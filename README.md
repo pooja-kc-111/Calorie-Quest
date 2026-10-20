@@ -38,4 +38,17 @@ Built as a personal Android development project while learning Java and app deve
 
 ---
 
+## 📱 App Screenshots
+
+### 🧸 Welcome Screen
+![Welcome Screen](Screenshot_20261020_060923.jpg)
+
+### 🍓 Calorie Quest Dashboard
+![Dashboard](Screenshot_20261020_060842.jpg)
+
+### 🏆 Nutrition Tracking
+![Nutrition Tracking](Screenshot_20261020_060910.jpg)
+
+---
+
 Made with 💗 and a little bit of code.
