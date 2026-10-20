@@ -1,4 +1,4 @@
-**🍓 Calorie Quest**
+**🍓 _Calorie Quest_**
 
 Your daily nutrition journey, made simple and fun!
 
